@@ -1,0 +1,39 @@
+/* ========== BASE ========== */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* ========== BRAND COLORS ========== */
+.bg-primary-green  { background-color: #347928; }
+.text-primary-green { color: #347928; }
+.bg-accent-yellow  { background-color: #FCCD2A; }
+.text-accent-yellow { color: #FCCD2A; }
+
+/* ========== COMPONENTS ========== */
+.donate-shadow {
+  box-shadow: 4px 4px 0 #FCCD2A;
+}
+
+.project-card {
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.project-card:hover {
+  border-color: #347928;
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(52, 121, 40, 0.15);
+}
+
+/* ========== SLIDER ========== */
+#aboutSlider {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+  height: 100%;
+}
+
+/* ========== MODAL ========== */
+#modalBox {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}

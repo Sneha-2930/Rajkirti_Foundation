@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Team – RajKriti Foundations</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  body { font-family: 'Lato', sans-serif; background: #f5f5f5; }
+  .bg-primary-green { background-color: #347928; }
+  .text-primary-green { color: #347928; }
+
+  .member-card {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  .member-card:hover {
+    border-color: #347928;
+    transform: translateY(-8px);
+    box-shadow: 0 16px 40px rgba(52,121,40,0.18);
+  }
+
+  /* Modal animation */
+  #modalBox {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-bold text-primary-green">RajKriti Foundations</a>
+    <nav class="space-x-6 font-medium">
+      <a href="index.html" class="hover:text-primary-green transition-colors">Home</a>
+      <a href="index.html#about" class="hover:text-primary-green transition-colors">About</a>
+      <a href="index.html#programs" class="hover:text-primary-green transition-colors">Our Work</a>
+      <a href="index.html#contact" class="hover:text-primary-green transition-colors">Contact</a>
+      <a href="teampage.html" class="text-primary-green font-bold underline">Team</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO BANNER -->
+<section id="home" class="relative bg-primary-green text-white py-32 text-center">
+  <img src="hero.jpeg" alt="RajKriti Foundations Team" class="absolute inset-0 w-full h-full object-cover opacity-30">
+  <div class="relative max-w-4xl mx-auto px-6">
+    <h1 class="text-5xl font-extrabold mb-6">
+      Meet Our Team
+    </h1>
+    <p class="text-lg opacity-80">The people behind the change</p>
+  </div>
+</section>
+<!-- TEAM SECTION -->
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- ROW 1: CEO — centered alone -->
+    <div class="flex justify-center mb-10">
+      <div onclick="openModal(
+          'Mallika Punj',
+          'CEO',
+          'images/Mallika.jpeg',
+          'Mallika Punj leads the organization with a strong vision to create meaningful and sustainable social impact. As CEO, she oversees the strategic direction of the foundation, fostering partnerships and initiatives that empower communities and drive positive change.'
+        )"
+        class="member-card bg-white rounded-2xl shadow-md overflow-hidden w-72">
+        <!-- PHOTO -->
+        <div class="w-full h-64 overflow-hidden bg-green-50">
+          <img src="images/Mallika.jpeg"
+               onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Mallika+Punj&background=347928&color=fff&size=300&font-size=0.33';"
+               class="w-full h-full object-cover object-top"
+               alt="Mallika Punj">
+        </div>
+        <!-- INFO -->
+        <div class="p-5 text-center">
+          <h3 class="font-extrabold text-xl text-primary-green">Mallika Punj</h3>
+          <p class="text-gray-500 text-sm mt-1">CEO</p>
+          <span class="inline-block mt-3 bg-green-100 text-primary-green text-xs font-bold px-4 py-1 rounded-full">
+            Founder & Head
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 2: Executive Director + Operations Head + Community Engagement Corrdinator-->
+    <div class="flex justify-center gap-8 flex-wrap mb-10">
+
+      <div onclick="openModal(
+          'Chandrika Punj',
+          'Executive Director',
+          'images/Chandrika.jpeg',
+          'Chandrika Punj plays a key role in translating the organization\'s vision into impactful programs. She leads the planning, coordination, and execution of initiatives, ensuring that every effort aligns with the foundation\'s mission to uplift and support communities.'
+        )"
+        class="member-card bg-white rounded-2xl shadow-md overflow-hidden w-64">
+        <div class="w-full h-56 overflow-hidden bg-green-50">
+          <img src="images/Chandrika.jpeg"
+               onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Chandrika+Punj&background=347928&color=fff&size=300&font-size=0.33';"
+               class="w-full h-full object-cover object-top"
+               alt="Chandrika Punj">
+        </div>
+        <div class="p-5 text-center">
+          <h3 class="font-bold text-lg text-primary-green">Chandrika Punj</h3>
+          <p class="text-gray-500 text-sm mt-1">Executive Director</p>
+        </div>
+      </div>
+
+      <div onclick="openModal(
+          'Sarthak Raturi',
+          'Operations Head',
+          'images/Sarthak.jpeg',
+          'Sarthak Raturi manages the operational framework of the organization, ensuring efficiency and seamless coordination across programs and teams. His work focuses on strengthening processes that enable effective program delivery and community outreach.'
+        )"
+        class="member-card bg-white rounded-2xl shadow-md overflow-hidden w-64">
+        <div class="w-full h-56 overflow-hidden bg-green-50">
+          <img src="images/Sarthak.jpeg"
+               onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Sarthak+Raturi&background=347928&color=fff&size=300&font-size=0.33';"
+               class="w-full h-full object-cover object-top"
+               alt="Sarthak Raturi">
+        </div>
+        <div class="p-5 text-center">
+          <h3 class="font-bold text-lg text-primary-green">Sarthak Raturi</h3>
+          <p class="text-gray-500 text-sm mt-1">Operations Head</p>
+        </div>
+      </div>
+
+      <div onclick="openModal(
+          'Prachi Choudhary',
+          'Community Engagement Coordinator',
+          'images/Prachi.jpeg',
+          'Prachi plays a key role in connecting our organization with the communities we serve. She coordinates outreach activities, engages volunteers, and helps ensure that community voices are heard and reflected in our programs.'
+        )"
+        class="member-card bg-white rounded-2xl shadow-md overflow-hidden w-64">
+        <div class="w-full h-56 overflow-hidden bg-green-50">
+          <img src="images/Prachi.jpeg"
+               onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Prachi+Choudhary&background=347928&color=fff&size=300&font-size=0.33';"
+               class="w-full h-full object-cover object-top"
+               alt="Prachi Choudhary">
+        </div>
+        <div class="p-5 text-center">
+          <h3 class="font-bold text-lg text-primary-green">Prachi Choudhary</h3>
+          <p class="text-gray-500 text-sm mt-1">Community Engagement Coordinator</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ROW 3: Remaining 4 members -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+      <div onclick="openModal(
+          'Sneha',
+          'Technology Lead',
+          'images/Sneha.jpeg',
+          'Sneha leads the organization\'s technological initiatives, supporting digital platforms, systems, and innovation that enhance communication, outreach, and operational efficiency.'
+        )"
+        class="member-card bg-white rounded-2xl shadow-md overflow-hidden">
+        <div class="w-full h-48 overflow-hidden bg-green-50">
+          <img src="images/Sneha.jpeg"
+               onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Sneha&background=347928&color=fff&size=300&font-size=0.33';"
+               class="w-full h-full object-cover object-top"
+               alt="Sneha">
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-bold text-primary-green">Sneha</h3>
+          <p class="text-gray-500 text-xs mt-1">Technology Lead</p>
+        </div>
+      </div>
+
+      <div onclick="openModal(
+          'Gauri',
+          'Technology Lead',
+          'images/Gauri.jpeg',
+          'Gauri leads the organization\'s technological initiatives, supporting digital platforms, systems, and innovation that enhance communication, outreach, and operational efficiency.'
+        )"
+        class="member-card bg-white rounded-2xl shadow-md overflow-hidden">
+        <div class="w-full h-48 overflow-hidden bg-green-50">
+          <img src="images/Gauri.jpeg"
+               onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Gauri&background=347928&color=fff&size=300&font-size=0.33';"
+               class="w-full h-full object-cover object-center"
+               alt="Gauri">
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-bold text-primary-green">Gauri</h3>
+          <p class="text-gray-500 text-xs mt-1">Technology Lead</p>
+        </div>
+      </div>
+
+      <div onclick="openModal(
+          'Anushka Sharma',
+          'Social Media Manager',
+          'images/Anushka.jpeg',
+          'Anushka Sharma manages the organization\'s digital voice, using social media to share stories of impact, raise awareness, and engage with a wider community to amplify the foundation\'s mission.'
+        )"
+        class="member-card bg-white rounded-2xl shadow-md overflow-hidden">
+        <div class="w-full h-48 overflow-hidden bg-green-50">
+          <img src="images/Anushka.jpeg"
+               onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Anushka+Sharma&background=347928&color=fff&size=300&font-size=0.33';"
+               class="w-full h-full object-cover object-top"
+               alt="Anushka Sharma">
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-bold text-primary-green">Anushka Sharma</h3>
+          <p class="text-gray-500 text-xs mt-1">Social Media Manager</p>
+        </div>
+      </div>
+
+      <div onclick="openModal(
+          'Siddhant Singh',
+          'Volunteer Coordinator',
+          'images/Siddhant.jpeg',
+          'Siddhant Singh oversees recruitment, orientation, and engagement of volunteers, ensuring their efforts are effectively aligned with the foundation\'s programs and community initiatives.'
+        )"
+        class="member-card bg-white rounded-2xl shadow-md overflow-hidden">
+        <div class="w-full h-48 overflow-hidden bg-green-50">
+          <img src="images/Siddhant.jpeg"
+               onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Siddhant+Singh&background=347928&color=fff&size=300&font-size=0.33';"
+               class="w-full h-full object-cover object-center"
+               alt="Siddhant Singh">
+        </div>
+        <div class="p-4 text-center">
+          <h3 class="font-bold text-primary-green">Siddhant Singh</h3>
+          <p class="text-gray-500 text-xs mt-1">Volunteer Coordinator</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MODAL ===================== -->
+<div id="modal"
+  class="fixed inset-0 bg-black bg-opacity-60 z-50 hidden items-center justify-center p-4"
+  onclick="closeModalOutside(event)">
+
+  <div id="modalBox"
+    class="bg-white rounded-2xl shadow-2xl w-full max-w-lg overflow-hidden
+           transform scale-95 opacity-0">
+
+    <!-- MODAL PHOTO — rectangular, tall -->
+    <div class="w-full h-80 overflow-hidden bg-green-50">
+      <img id="modalImg"
+           class="w-full h-full object-cover object-top"
+           alt="Team member photo">
+    </div>
+
+    <!-- MODAL INFO -->
+    <div class="p-8 text-center">
+      <h3 id="modalName" class="text-2xl font-extrabold text-primary-green mb-1"></h3>
+      <span id="modalRole"
+        class="inline-block bg-green-100 text-primary-green text-sm font-bold px-5 py-1.5 rounded-full mb-5">
+      </span>
+      <p id="modalBio" class="text-gray-600 text-sm leading-relaxed mb-6"></p>
+
+      <button onclick="closeModal()"
+        class="bg-primary-green text-white font-bold px-10 py-3 rounded-xl
+               hover:bg-green-700 transition-colors duration-200">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-primary-green text-white text-center py-6">
+  <p class="font-bold">RajKriti Foundations</p>
+  <p class="text-sm mt-1 opacity-70">© 2025. All Rights Reserved.</p>
+</footer>
+
+<script>
+  function openModal(name, role, imgSrc, bio) {
+    const modal    = document.getElementById('modal');
+    const modalBox = document.getElementById('modalBox');
+    const imgEl    = document.getElementById('modalImg');
+
+    // Fill content
+    document.getElementById('modalName').innerText = name;
+    document.getElementById('modalRole').innerText = role;
+    document.getElementById('modalBio').innerText  = bio;
+
+    // Image with fallback
+    imgEl.src = imgSrc;
+    imgEl.onerror = function () {
+      this.onerror = null;
+      this.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=347928&color=fff&size=400&font-size=0.25`;
+    };
+
+    // Show overlay
+    modal.style.display = 'flex';
+    modal.classList.remove('hidden');
+
+    // Animate in
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        modalBox.classList.remove('scale-95', 'opacity-0');
+        modalBox.classList.add('scale-100', 'opacity-100');
+      });
+    });
+  }
+
+  function closeModal() {
+    const modal    = document.getElementById('modal');
+    const modalBox = document.getElementById('modalBox');
+
+    modalBox.classList.remove('scale-100', 'opacity-100');
+    modalBox.classList.add('scale-95', 'opacity-0');
+
+    setTimeout(() => {
+      modal.style.display = 'none';
+      modal.classList.add('hidden');
+    }, 300);
+  }
+
+  function closeModalOutside(event) {
+    if (event.target === document.getElementById('modal')) {
+      closeModal();
+    }
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
+  });
+</script>
+
+</body>
+</html>
